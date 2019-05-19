@@ -31,7 +31,8 @@ public class HbaseConf {
 		configuration.set(HConstants.ZOOKEEPER_QUORUM, hbaseProperty.getHost());
 		configuration.set(HConstants.ZOOKEEPER_CLIENT_PORT, hbaseProperty.getPort());
 		configuration.set(HConstants.ZOOKEEPER_ZNODE_PARENT, hbaseProperty.getZkNode());
-
+		configuration.set(HConstants.ZOOKEEPER_DATA_DIR, hbaseProperty.getHbaseData());
+		configuration.set(HConstants.MASTER_PORT, hbaseProperty.getMasterPort());
 		
 		connection = ConnectionFactory.createConnection(configuration);
 		return connection;

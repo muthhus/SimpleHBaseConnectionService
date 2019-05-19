@@ -1,4 +1,4 @@
-# Simple HBase Connection Service
+# Simple HBase Connection Service without using Hbase Template
 
 This is a simple HBase connection Service; using Java API Single PUT to update the existing customer information.
 
@@ -27,7 +27,7 @@ s\xC4\xC9t\xA0\x81\x1C1Sy\xF3y\xBB\xF03
 7\x82\x0AE\xC0\x98\x97\xC8\xEB&\xF6\xCF
 
 ## Tools & Frameworks
-  * Spring Framework
+  * Spring Boot
   * Hbase
   * Zookeeper
   * HDFS

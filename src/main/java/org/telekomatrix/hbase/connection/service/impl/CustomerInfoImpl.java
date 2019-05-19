@@ -51,7 +51,6 @@ public class CustomerInfoImpl implements CustomerRepository {
 		try {
 			salt.update(UUID.randomUUID().toString().getBytes("UTF-8"));
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		byte[] digest = salt.digest();

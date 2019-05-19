@@ -1,7 +1,5 @@
 package org.telekomatrix.hbase.connection.service;
 
-import javax.sql.DataSource;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,9 +9,8 @@ import org.telekomatrix.hbase.connection.service.impl.CustomerInfoImpl;
 
 @SpringBootApplication
 public class HbaseConnectionServiceApplication implements CommandLineRunner{
-	
-	private DataSource dataSource;
 
+	@Autowired
 	private HbaseConf hbaseConf;
 	
 	@Autowired

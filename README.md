@@ -1,12 +1,12 @@
-# Simple HBase Connection Service
+# Simple HBase Connection Service without using Hbase Template
 
-This is simple HBase connection Service and using Java API Single PUT to update the existing customer information.
+This is a simple HBase connection Service; using Java API Single PUT to update the existing customer information.
 
 ## To Create a CustomerInfo table using HBase Shell
 
 >create 'customerInfo', 'customer'
 
-After creating a table, run the service using following command to update the customer information using MR Single PUT Java API.
+After creating a table, run the service using the following command to update the customer information using MR Single PUT Java API.
 
 ## To run the service
 
@@ -25,3 +25,10 @@ s\xC4\xC9t\xA0\x81\x1C1Sy\xF3y\xBB\xF03
 s\xC4\xC9t\xA0\x81\x1C1Sy\xF3y\xBB\xF03                                                                                                                                                                             
 \xDB\xC0\x89 dN\x91Y\xBAxl\xDAN\xB4(\xFE7\x00~\x10\x8 column=customer:age, timestamp=1558249701091, value=23                                                                                                        
 7\x82\x0AE\xC0\x98\x97\xC8\xEB&\xF6\xCF
+
+## Tools & Frameworks
+  * Spring Boot
+  * Hbase
+  * Zookeeper
+  * HDFS
+  * Hadoop Common - MR Single PUT Java API
